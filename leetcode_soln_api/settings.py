@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 import environ
 import os
 env = environ.Env()
-environ.Env.read_env(os.path.join(BASE_DIR.parent, '.env'))
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
   # Reads the .env file
 
