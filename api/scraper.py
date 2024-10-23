@@ -36,8 +36,8 @@ def return_data_dict():
             number = match.group(1)
             name = match.group(2)
             link = match.group(3)
-            time_complexity = match.group(4).replace('<br>', ' ').replace('_O(', 'O(').replace(')_', ')')
-            space_complexity = match.group(5).replace('<br>', ' ').replace('_O(', 'O(').replace(')_', ')')
+            time_complexity = match.group(4).replace('<br>', ' ').replace('_O(', 'O(').replace(')_', ')').strip()
+            space_complexity = match.group(5).replace('<br>', ' ').replace('_O(', 'O(').replace(')_', ')').strip()
 
             # Create a dictionary for the current line
             data_dict = {
